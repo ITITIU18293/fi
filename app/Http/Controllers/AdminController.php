@@ -9,4 +9,8 @@ class AdminController extends Controller
     public function index(){
         return view('admin');
     }
+
+    public function cominfo(){
+        return view('/admin/settings');
+    }
 }
