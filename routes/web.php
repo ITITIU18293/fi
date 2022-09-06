@@ -21,12 +21,7 @@ Route::get('/',[HomeController::class,"index"]);
 
 Route::get('/redirects',[HomeController::class,"redirects"]);
 
-Route::get('/redirects',[HomeController::class,"redirects"]);
-
 Route::get('/admin',[App\Http\Controllers\AdminController::class,'index']);
-
-Route::get('/company-info',[App\Http\Controllers\AdminController::class,'cominfo']);
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
